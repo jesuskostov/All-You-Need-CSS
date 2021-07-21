@@ -1,0 +1,253 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
+@import '../../node_modules/bootstrap/dist/css/bootstrap-utilities.min.css';
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-size: 16px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+// Colors 
+$primary: #000;
+$secondary: #000;
+$third: #000;
+$black: #000;
+$white: #fff;
+$gray: #808080;
+
+// Breakpoints
+$xs: 576px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+// Spacing variables
+$space-from: 5;
+$space-to: 100;
+
+// Border radius
+$radius-from: 2;
+$radius-to: 50;
+
+// Opacity
+$opacity-from: 0;
+$opacity-to: 10;
+
+// Font sizes
+$fz-from: 12;
+$fz-to: 80;
+
+// Font sizes
+@for $i from $fz-from through $fz-to {
+    .fz-#{$i} {
+        font-size: #{$i}px;
+    }
+}
+
+@media (min-width: $xs) { 
+    @for $i from $fz-from through $fz-to {
+        .fz-sm-#{$i} {
+            font-size: #{$i}px;
+        }
+    }
+}
+
+@media (min-width: $sm) { 
+    @for $i from $fz-from through $fz-to {
+        .fz-md-#{$i} {
+            font-size: #{$i}px;
+        }
+    }
+}
+
+@media (min-width: $md) { 
+    @for $i from $fz-from through $fz-to {
+        .fz-lg-#{$i} {
+            font-size: #{$i}px;
+        }
+    }
+}
+
+// Margin and paddings
+@for $i from $space-from through $space-to {
+    .mt-#{$i} {
+        margin-top: #{$i}px;
+    }
+    .mr-#{$i} {
+        margin-right: #{$i}px;
+    }
+    .mb-#{$i} {
+        margin-bottom: #{$i}px;
+    }
+    .ml-#{$i} {
+        margin-left: #{$i}px;
+    }
+    .pt-#{$i} {
+        padding-top: #{$i}px;
+    }
+    .pr-#{$i} {
+        padding-right: #{$i}px;
+    }
+    .pb-#{$i} {
+        padding-bottom: #{$i}px;
+    }
+    .pl-#{$i} {
+        padding-left: #{$i}px;
+    }
+}
+
+@media (min-width: $xs) { 
+    @for $i from $space-from through $space-to {
+        .mt-sm-#{$i} {
+            margin-top: #{$i}px;
+        }
+        .mr-sm-#{$i} {
+            margin-right: #{$i}px;
+        }
+        .mb-sm-#{$i} {
+            margin-bottom: #{$i}px;
+        }
+        .ml-sm-#{$i} {
+            margin-left: #{$i}px;
+        }
+        .pt-sm-#{$i} {
+            padding-top: #{$i}px;
+        }
+        .pr-sm-#{$i} {
+            padding-right: #{$i}px;
+        }
+        .pb-sm-#{$i} {
+            padding-bottom: #{$i}px;
+        }
+        .pl-sm-#{$i} {
+            padding-left: #{$i}px;
+        }
+    }
+}
+
+@media (min-width: $sm) { 
+    @for $i from $space-from through $space-to {
+        .mt-md-#{$i} {
+            margin-top: #{$i}px;
+        }
+        .mr-md-#{$i} {
+            margin-right: #{$i}px;
+        }
+        .mb-md-#{$i} {
+            margin-bottom: #{$i}px;
+        }
+        .ml-md-#{$i} {
+            margin-left: #{$i}px;
+        }
+        .pt-md-#{$i} {
+            padding-top: #{$i}px;
+        }
+        .pr-md-#{$i} {
+            padding-right: #{$i}px;
+        }
+        .pb-md-#{$i} {
+            padding-bottom: #{$i}px;
+        }
+        .pl-md-#{$i} {
+            padding-left: #{$i}px;
+        }
+    }
+}
+
+@media (min-width: $md) { 
+    @for $i from $space-from through $space-to {
+        .mt-lg-#{$i} {
+            margin-top: #{$i}px;
+        }
+        .mr-lg-#{$i} {
+            margin-right: #{$i}px;
+        }
+        .mb-lg-#{$i} {
+            margin-bottom: #{$i}px;
+        }
+        .ml-lg-#{$i} {
+            margin-left: #{$i}px;
+        }
+        .pt-lg-#{$i} {
+            padding-top: #{$i}px;
+        }
+        .pr-lg-#{$i} {
+            padding-right: #{$i}px;
+        }
+        .pb-lg-#{$i} {
+            padding-bottom: #{$i}px;
+        }
+        .pl-lg-#{$i} {
+            padding-left: #{$i}px;
+        }
+    }
+}
+
+// Border radius
+@for $i from $radius-from through $radius-to {
+    .border-rad-#{$i} {
+        border-radius: #{$i}px;
+    }
+}
+
+// Opacity 
+@for $i from $opacity-from through $opacity-to {
+    .opacity-#{$i} {
+        opacity: ($i / 10);
+    }
+}
+
+.menu {
+    
+}
+
+.menu .link {
+
+}
+
+.menu {
+    &__link {
+        
+    }
+}
