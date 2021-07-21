@@ -14,7 +14,7 @@ Also you can always change the variables <b>from</b> and <b>to</b>, you have set
 In the library is included JavaScript file that will help you to <b>nest clasess</b> very easy if you enabled it. 
 <br/>
 For example:
-<b>card > card__inner > card__inner_title and etc...</b>
+<b>card > card__inner > card__inner__title and etc...</b>
 <br/>
 http://getbem.com/naming/
 <br/>
