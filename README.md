@@ -15,3 +15,7 @@ For example:
 <b>card > card__inner > card__inner_title and etc...</b>
 <br/>
 http://getbem.com/naming/
+<br/>
+<br/>
+<br/>
+<i>(Included from Bootstrap only Grid and Utilities)</i>
