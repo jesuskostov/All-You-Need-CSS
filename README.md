@@ -1,6 +1,8 @@
 # All-You-Need-CSS
 CSS code combined with some bootstrap utilities and custom css
 
+<b>npm i</b> and then <b>yarn scss</b> and you are ready to go...
+
 - Margin and paddings from 5px to 100px => <b>mt-5</b>, <b>mt-100</b> also is same for all the resolutions like <b>mt-md-42, mr-lg-13 and etc...</b>
 - Border radius from 2px to 50px => <b>border-rad-22, border-rad-13, border-rad-43 and etc...</b>
 - Font sizes from 12px to 80px => Change on different resolutions, for example you can use <b>fz-sm-14</b> for tablet and then you can change it for desktop like <b>fz-lg-26</b>
