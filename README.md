@@ -11,7 +11,7 @@ CSS code combined with some bootstrap utilities and custom css
 Also you can always change the variables <b>from</b> and <b>to</b>, you have set of <b>color variables</b> that you can change and extend.
 <br/> 
 <br/> 
-In the library is included JavaScript file that will help you to <b>nest clasess</b> very easy if you enabled it. 
+In the library is included JavaScript file that will help you to <b>nest clasess</b> very easy if you enable it. 
 <br/>
 For example:
 <b>card > card__body > card__body__title and etc...</b>
